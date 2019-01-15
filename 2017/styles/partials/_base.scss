@@ -1,0 +1,23 @@
+a{
+	text-decoration:none;
+	color: $baseTextColor;
+	&:active, &:visited{
+		color: $baseTextColor;
+	}
+}
+.title, .section-title, .bold{
+	font-family: $titleFont;
+}
+
+.section-title{
+	font-size:3.5em;
+	height:4em;
+
+	@media #{$media-phone} {height: 2.3em;}
+	// border:solid 0.1em #000;
+}
+
+.textShadow{
+	color:#fff;
+	text-shadow: 0.1em 0em 0.1em $boxShadow;
+}

@@ -1,0 +1,113 @@
+#projects {
+	.project-list{
+		flex-flow: row wrap;
+	}
+	.project-container{
+		box-shadow: 0.5em 0.5em 1em 0.2em $boxShadow;
+		flex-basis: 46%;
+		height: 70vh;
+		margin-bottom: 1.5em;
+
+		@media #{$media-phone}, #{$media-narrow-screen} {
+			flex-basis: 80%;
+		}
+		@media #{$media-phone} {
+			box-shadow: 0em 0.5em 0.7em 0.3em $boxShadow;
+		}
+	}
+	.project-container-inner {
+		position:relative;
+	}
+	.img-container{
+		position: relative;
+		overflow: hidden;
+
+		img{
+			position:absolute;
+			@include rect(auto, 100%);
+
+			@media #{$media-phone} {
+				transform: translateX(-18em);
+			}		
+		}
+		.project-link-demo{
+			cursor:pointer;
+			position:absolute;
+			@include rect(100%, 100%);
+			z-index:1;
+			transition: $transitionBounce;
+			opacity:0;
+
+			&:after{
+				content:'CHECK IT OUT'; 
+				display:flex;
+				justify-content: center; align-items: center;
+				@include circle(10em);
+				border:solid 0.3em #fff; 
+				font-size: 1.1em; color:#fff;
+				background-color: rgba(0,0,0, 0.3);
+
+				@media #{$media-phone} {
+					transform: translateY(-3em);
+				}
+			}
+		}
+	}
+	.img-container img, .info-container, .info-container-inner, .project-link-code{
+		transition: $transitionBounce;
+	} 
+	.info-container{
+		position:absolute;
+	}
+	.info-container-inner{
+		width: 90%;
+		margin-left: 1em;
+		opacity:0;
+		transition-delay:0.1s;
+	}
+	.project-link-code {
+		position:absolute;
+		bottom:0em; right: 1em;
+		@include circle(2.2em);
+		opacity:0;
+		z-index: 10;
+		transition-delay:0.3s;
+		&:after{
+			display:block; 
+			content: "code";
+			font-size: 0.5em;
+		}
+
+	}	
+	.project-container{
+		&:hover{
+			filter: grayscale(85%);
+			img, .project-link-demo{
+				transform: scale(1.1);		
+			}
+			.project-link-demo{
+				opacity:1;
+			}
+			.info-container{			
+				background-color: rgba(255, 255, 255, 0.7);
+			}
+			.info-container-inner{
+				transform: translateY(-2em);
+				opacity:1;
+			}
+			.project-link-code{
+				bottom:1em;
+				opacity:1;
+			}
+		}
+	}
+	.project-link-code {
+		&:hover{
+			box-shadow: 0.1em 0.1em 0.5em 0.01em $boxShadow;
+			color: darken($github, 10%);
+			transition-delay:0s;
+			background-color: rgba(255, 255, 255, 0.8);
+
+		}
+	}
+}

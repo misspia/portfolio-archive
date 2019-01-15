@@ -1,0 +1,31 @@
+#about {
+	.content-inner{
+		font-size:2em;
+		line-height: 1.5;
+		letter-spacing: 0.5px;
+		width: 90%;
+		max-width: 60em;
+	}
+	.content-inner, .regular-text, .highlighted-text{
+		transition: $transition;
+	}
+	.content-inner{
+		&:hover{
+			.regular-text{
+				opacity:0;
+			}
+		}
+	}
+	.highlighted-text{
+		border-bottom: solid 0.1em #000;
+
+		&:hover{
+			border-color: inherit;
+
+			&.github{color:$github;}
+			&.linkedin{color:$linkedin;}
+			&.codepen{color:$codepen;}
+			&.misc-link{color: $miscLink;}
+		}
+	}
+}

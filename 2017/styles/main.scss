@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300');
+
+
+@import 'partials/variables';
+@import 'partials/layout';
+@import 'partials/base';
+
+@import 'partials/loader';
+@import 'partials/nav';
+@import 'partials/hero';
+@import 'partials/about';
+@import 'partials/projects';
+@import 'partials/footer';
+
+body {
+	background-color:$baseBgColor;
+	overflow-x:hidden;
+	font-family: $bodyFont;
+	background-image: url('../media/bg.gif');
+
+	@media #{$media-phone} {
+	  	font-size:2em;
+	  	// padding:0
+	}
+}
+
+#about, #projects {
+	background-color: $baseBgColor;
+	min-height: 100vh;
+}

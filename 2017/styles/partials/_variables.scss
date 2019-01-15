@@ -1,0 +1,40 @@
+$titleFont: 'Montserrat', sans-serif;
+$bodyFont: 'Nunito Sans', sans-serif;
+// https://fonts.google.com/specimen/Maven+Pro
+
+//media queries
+// $media-phone: "only screen  and (min-device-width: 300px) 
+// 						  and (max-device-width: 720px)
+// 						  and (-webkit-min-device-pixel-ratio: 2)";
+$media-phone: "only screen  and (min-device-width: 300px) 
+						  and (max-device-width: 880px)
+						  and (-webkit-min-device-pixel-ratio: 2)";
+
+
+$media-narrow-screen: "screen and (max-width: 1190px)";
+
+//color pallette
+$baseBgColor: #fff;
+$baseTextColor: #000;
+$lightTextColor: #707070;
+
+$demo: #5bd999;
+$github: #b18abf;
+$linkedin: #0e85c9;
+$codepen: #455a64;
+$miscLink: #f19200;
+
+
+$transition: all 0.3s;
+$transitionBounce: all 0.35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
+
+$boxShadow: rgba(0,0,0,.26);
+
+@mixin circle($width) {
+	height:$width; width: $width;
+	border-radius: 50%;
+}
+@mixin rect($width, $height){
+	height: $height; width: $width;
+	border-radius:0;
+}
