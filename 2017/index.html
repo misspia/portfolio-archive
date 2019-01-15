@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pia Leung</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="icons/styles.css">
+</head>
+<body class="full-width-height loading">
+	<ul id="main" class="col align-center full-width">
+
+		<!--NAV-->
+		<li id="nav" class="row center full-width">
+			<ul class="row flex-end full-width-height bold nav-inner">
+				<a href="#about" class="row center align-center full-height nav-item">ABOUT</a>
+				<a href="#projects" class="row center align-center full-height nav-item">PROJECTS</a>
+			</ul>
+		</li> <!--NAV END-->
+
+		<li id="hero" class="full-width section">
+			<ul class="col center align-center full-width-height">
+
+				<video id="bgVid" 
+					poster="./media/ink-poster.png" 
+					playsinline autoplay muted loop  >
+					<source src="media/ink.mp4" type="video/mp4">
+					<img src="./media/ink-poster.png">
+				</video>
+			
+				<li class="section-content">
+					<ul class="col center align-center full-width-height">
+						<li class="col center align-center box">
+							<span class="row title textShadow">PIA LEUNG</span>
+							<span class="subtitle row">WEB DEVELOPER</span>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>		
+		</li>
+
+
+
+
+		<li id="about" class="full-width section">
+			<ul class="col align-center full-width section-inner">
+				<li class="col center section-title">about.</li>
+				<li class="col align-center section-content">
+					<ul class="content-inner">
+						<span class="regular-text">
+							Hi there, my name is 
+						</span>
+						
+						<span class="bold highlighted-text">
+							Pia
+						</span>
+						<span class="regular-text">
+							and I am currently studying at the University of Waterloo. Here, take a copy of my
+						</span>
+						
+						<a href="./pialeung.pdf" target="_blank" class="bold highlighted-text misc-link">resume</a>
+
+						<span class="regular-text">
+							and feel free to contact me at 
+						</span>
+						
+						<a href="" class="bold highlighted-text misc-link">miss.pialeung@gmail.com</a>
+
+						<span class="regular-text">
+							. I am well versed in both client and server side web development. 
+							My passions lie in data visualization and WebGL. Check out some of my 
+						</span>
+						
+						<a href="#projects" class="bold highlighted-text misc-link">projects</a> 
+
+						<span class="regular-text">or find me at</span>
+
+						<a href="https://github.com/misspia" target="_blank" class="bold highlighted-text github">GitHub</a>
+
+						<span class="regular-text">-</span>
+
+						<a href="https://www.linkedin.com/in/pia-leung-91606678?trk=nav_responsive_tab_profile" target="_blank" class="bold highlighted-text linkedin">LinkedIn</a>
+
+						<span class="regular-text">-</span>
+						
+						<a href="https://codepen.io/misspia/" target="_blank" class="bold highlighted-text codepen">Codepen</a>
+					</ul>
+						
+				</li>
+			</ul>	
+		</li>
+
+<!--PROJECTS SECTION -->
+		<li id="projects" class="full-width section">
+			<ul class="col center align-center full-width-height">
+				<li class="col center section-title">projects. </li>
+				<ul class="row space-around full-width-height project-list">
+				<!--LOL ANALYTICS project container -->
+					<li class="row project-container">
+						<ul class="col align-center full-width-height project-container-inner">
+							<!--img container -->
+							<li class="col center full-width-height img-container">
+									<a href="http://lol.studio-ki.co/champions"
+										target="_blank" 
+										class="row center align-center bold project-link-demo"></a>
+									<img src="./media/projects/project-lol-analytics.PNG">							
+							</li> <!--img container end -->
+							<!--info container -->
+							<li class="col flex-end align-start full-width-height info-container">
+								<ul class="col info-container-inner">
+									<li class="title">League of Legends Analytics</li>
+									<li class="description">
+										A statitical build / strategies analytics tool designed for League of Legends. 
+										The data mining and processing was done using Python. The API layer uses 
+										an Express server ontop of a Postgres database. The front end 
+										was built using React + Redux with custom Webpack configs.
+									</li>
+									<li class="row align-center bold technology-stack">
+										Technology: Python, Postgres, Node.js, Express, React, Redux, Webpack
+									</li>
+									<li class="github-link">
+										<a href="http://lol.studio-ki.co/champions" 
+										target = "_blank"
+										class="row center align-center link demo"></a>
+									</li>
+								</ul>	
+							</li> <!-- info container end -->
+							<a href="https://github.com/Nyanza/lol-analytics"
+								target = "_blank"
+								class="col center align-center icon-github project-link-code"></a>
+						</ul>
+					</li> 
+					<!--LOL ANALYTICS project container end -->
+				<!--POKEDEX V2 project container -->
+					<li class="row project-container">
+						<ul class="col align-center full-width-height project-container-inner">
+							<!--img container -->
+							<li class="col center full-width-height img-container">
+									<a href="http://pokedex.jasonmh.me/"
+										target="_blank" 
+										class="row center align-center bold project-link-demo"></a>
+									<img src="./media/projects/project-pokedex-v2.PNG">							
+							</li> <!--img container end -->
+							<!--info container -->
+							<li class="col flex-end align-start full-width-height info-container">
+								<ul class="col info-container-inner">
+									<li class="title">Pokedex</li>
+									<li class="description">
+										Extended and restructured version of my previous Pokedex. The front end for this 
+										Pokedex was built using React + Redux. The backend was implmented using an Express 
+										server built ontop of a custom Postgres database from scraped Pokemon data
+									</li>
+									<li class="row align-center bold technology-stack">
+										Technology: Postgres, Node.js, Express, React, Redux, Webpack
+									</li>
+									<li class="github-link">
+										<a href="http://pokedex.jasonmh.me/" 
+										target = "_blank"
+										class="row center align-center link demo"></a>
+									</li>
+								</ul>	
+							</li> <!-- info container end -->
+							<a href="https://github.com/SEAKING-LOVE/pokedex"
+								target = "_blank"
+								class="col center align-center icon-github project-link-code"></a>
+						</ul>
+					</li> 
+					<!--POKEDEX V2 project container end -->
+				<!--AUDIO VIZ V2 project container -->
+					<li class="row project-container">
+						<ul class="col align-center full-width-height project-container-inner">
+							<!--img container -->
+							<li class="col center full-width-height img-container">
+									<a href="https://misspia.github.io/audio-visualizer-v2/"
+										target="_blank" 
+										class="row center align-center bold project-link-demo"></a>
+									<img src="./media/projects/project-audio-viz2.PNG">							
+							</li> <!--img container end -->
+							<!--info container -->
+							<li class="col flex-end align-start full-width-height info-container">
+								<ul class="col info-container-inner">
+									<li class="title">Audio Playlist / Visualizer</li>
+									<li class="description">
+										Extended and restructured version of my previous audio visualizer. This visualizer comes with 
+										a playlist feature implemented using a flux based architecture. The geometric visualizations 
+										are rendered using raw HTML canvas drawing techniques similar to processing
+									</li>
+									<li class="row align-center bold technology-stack">
+										Technology: WebAudio, React, flux, JavaScript, SCSS, HTML5, Webpack
+									</li>
+									<li class="github-link">
+										<a href="https://misspia.github.io/audio-visualizer-v2/" 
+										target = "_blank"
+										class="row center align-center link demo"></a>
+									</li>
+								</ul>	
+							</li> <!-- info container end -->
+							<a href="https://github.com/misspia/audio-visualizer-v2"
+								target = "_blank"
+								class="col center align-center icon-github project-link-code"></a>
+						</ul>
+					</li> 
+					<!--AUDIO VIZ V2 project container end -->
+				<!--ESPORTS EARNINGS project container -->
+					<li class="row project-container">
+						<ul class="col align-center full-width-height project-container-inner">
+							<!--img container -->
+							<li class="col center full-width-height img-container">
+									<a href="https://misspia.github.io/esports-visualization/"
+										target="_blank" 
+										class="row center align-center bold project-link-demo"></a>
+									<img src="./media/projects/project-esports-earnings.PNG">							
+							</li> <!--img container end -->
+							<!--info container -->
+							<li class="col flex-end align-start full-width-height info-container">
+								<ul class="col info-container-inner">
+									<li class="title">D3 Geographic Esports Visualisation</li>
+									<li class="description">
+										Created a 3D globe choropleth (heat map) of esports earnings for selected competitive games. Features include a self-rotating globe, zoomable interface and a tooltip when a country is hovered over. The visualization accepts user input and changes based on the selected game.
+									</li>
+									<li class="row align-center bold technology-stack">
+										Technology: D3.js, JavaScript, SCSS, HTML5, Gulp
+									</li>
+									<li class="github-link">
+										<a href="https://misspia.github.io/esports-visualization/" 
+										target = "_blank"
+										class="row center align-center link demo"></a>
+									</li>
+								</ul>	
+							</li> <!-- info container end -->
+							<a href="https://github.com/misspia/esports-visualization"
+										target = "_blank"
+										class="col center align-center icon-github project-link-code"></a>
+						</ul>
+					</li> 
+					<!--ESPORTS EARNINGS project container end -->
+				<!--AUDIO VIZ project container -->
+				<li class="row project-container">
+						<ul class="col align-center full-width-height project-container-inner">
+							<!--img container -->
+							<li class="col center full-width-height img-container">
+									<a href="https://misspia.github.io/d3-audio-visualizer/"
+										target="_blank" 
+										class="row center align-center bold project-link-demo"></a>
+									<img src="./media/projects/project-audio-viz.PNG">						
+							</li> <!--img container end -->
+							<!--info container -->
+							<li class="col flex-end align-start full-width-height info-container">
+								<ul class="col info-container-inner">
+									<li class="title">D3 Audio Visualizer</li>
+									<li class="description">
+										Dynamically creates animated graphs of uploaded audio files. Graphs utilize frequency and time domain data passed through custom D3 components and then into the DOM as SVG elements. Experience 2 color themes and 3 graph types (radial, frequency, wave).
+										 <!-- Animations are done by repeatedly drawing graphs in new animation frames and colors are changed by varying rgb values with audio data. -->
+									</li>
+									<li class="row align-center bold technology-stack">
+										Technology: D3.js, JavaScript, Sass, HTML5, Gulp
+									</li>
+								</ul>	
+							</li> <!-- info container end -->
+							<a href="https://misspia.github.io/d3-audio-visualizer/"
+										target = "_blank"
+										class="col center align-center icon-github project-link-code"></a>
+						</ul>
+					</li> 
+					<!--AUDIO VIZ project container end -->
+				<!--REACT LOL project container -->
+				<li class="row project-container">
+					<ul class="col align-center full-width-height project-container-inner">
+						<!--img container -->
+						<li class="col center full-width-height img-container">
+								<a href="https://misspia.github.io/3D-lol-champion-selector-reactjs/"
+									target="_blank" 
+									class="row center align-center bold project-link-demo"></a>
+								<img src="./media/projects/project-lol-champs.PNG">				
+						</li> <!--img container end -->
+						<!--info container -->
+						<li class="col flex-end align-start full-width-height info-container">
+							<ul class="col info-container-inner">
+								<li class="title">React 3D League of Legends Champion Selector</li>
+								<li class="description">
+									A compilation of LoL Champion data and images scraped using Node.js and rendered with React.js. The unique interface utilizes 3D transform properties in CSS to give the selection pannel the illusion of perspective. Images are optimized with the use of gulp.
+								</li>
+								<li class="row align-center bold technology-stack">
+									Technology: React.js, Node.js, Sass, HTML5, Gulp
+								</li>
+							</ul>	
+						</li> <!-- info container end -->
+						<a href="https://github.com/misspia/3D-lol-champion-selector-reactjs"
+										target = "_blank"
+										class="col center align-center icon-github project-link-code"></a>
+					</ul>
+				</li> 
+					<!--REACT LOL project container -->
+
+				<!--POKEDEX project container -->
+				<li class="row project-container">
+					<ul class="col align-center full-width-height project-container-inner">
+						<!--img container -->
+						<li class="col center full-width-height img-container">
+								<a href="https://misspia.github.io/Pokedex-angularjs/"
+									target="_blank" 
+									class="row center align-center bold project-link-demo"></a>
+								<img src="./media/projects/project-pokedex.PNG">			
+						</li> <!--img container end -->
+						<!--info container -->
+						<li class="col flex-end align-start full-width-height info-container">
+							<ul class="col info-container-inner">
+								<li class="title">AngularJS Pokedex</li>
+								<li class="description">
+									A highly interactive recreation of the classic digital Pokemon encyclopedia. I wrote a scrapper to collect the Pokemon data and mass download sprites and images. The interface is mobile compatible and was built using AngularJS. Responsive layout utilizes the CSS flexbox module. 
+								</li>
+								<li class="row align-center bold technology-stack">
+									Technology: AngularJS, Node.js, Sass, HTML5, Gulp
+								</li>
+							</ul>	
+						</li> <!-- info container end -->
+						<a href="https://misspia.github.io/Pokedex-angularjs/"
+										target = "_blank"
+										class="col center align-center icon-github project-link-code"></a>
+					</ul>
+				</li> 
+				<!--POKEDEX project container -->	
+				</ul>				
+			</ul>	
+		</li>
+		<!--PROJECTS SECTION END -->
+<!--FOOTER SECTION -->
+		<li id="footer" class="full-width">
+			<ul class="col center align-center full-width-height">
+				<li class="bold">Developed by Pia Leung</li>
+				<li>
+					Original video belongs to 
+					<a href="https://www.youtube.com/watch?v=pGbIOC83-So" target="_blank">
+						Leonid Livingstone
+					</a>  
+				</li>
+			</ul>
+		</li>
+<!--FOOTER SECTION END -->
+
+	</ul>
+	<div class="modal"></div>
+</body>
+	<script type="text/javascript" src = "js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90679590-1', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+</html>
+

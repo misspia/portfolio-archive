@@ -1,0 +1,152 @@
+#projects {
+	min-height: 100vh;
+	background-color: $baseBgColor;
+}
+
+.project-container{
+	height:50vh;
+	@media #{$media-phone}, #{$media-narrow-screen} {
+	  	height: 95vh;
+	}
+
+	.img-container, .info-container{
+		flex:1;
+
+		@media #{$media-phone} , #{$media-narrow-screen} { height:50%; }
+	}
+
+	.info-container{
+		justify-content: flex-start;
+		align-items: center;
+		@media #{$media-phone}  , #{$media-narrow-screen} {
+			align-items: flex-start;
+		}
+	}
+	.img-container-inner, .info-container-inner {
+		height: 20em;
+		width:30em;
+	}
+	.info-container-inner{
+		@media #{$media-phone}  , #{$media-narrow-screen} {
+			padding-left: 0.3em;
+		}
+	}
+
+	.img-container-inner{
+		position:relative;
+		width:30em;
+		overflow: hidden;
+		box-shadow: 0.5em 0.5em 1em 0.2em $boxShadow;
+
+		img{
+			@include rect(auto, 110%);	
+			transition: $transitionBounce;
+		}
+		.img-link-demo{
+			cursor:pointer;
+			position:absolute;
+			@include rect(100%, 100%);
+			z-index:1;
+			transition: $transitionBounce;
+
+			opacity:0;
+
+			&:after{
+				content:'CHECK IT OUT'; 
+				display:flex;
+				justify-content: center; align-items: center;
+				@include circle(10em);
+				border:solid 0.3em #fff; 
+				font-size: 1.1em; color:#fff;
+				background-color: rgba(0,0,0, 0.3);
+			}
+		}
+
+		&:hover{
+			filter: grayscale(80%);
+			img, .img-link-demo{
+				transform: scale(1.1);		
+			}
+			.img-link-demo{
+				opacity:1;
+			}
+		}
+	}		
+	.title{
+		flex:1;
+		font-size:1.8em;
+	}
+	.description{
+		flex:2.5;
+		@media #{$media-phone} {font-size: 1.1em;}
+	}
+	.technology-stack{
+		flex:1;
+	}
+	.project-links{
+		flex:1.5;
+	}
+	.link{
+		position:relative;
+		margin:0 0.5em;
+		font-size: 0.9em;
+		@include circle(4em);
+		@media #{$media-phone} {  font-size:1em; }
+
+		border-width:0.2em;
+		border-style:solid;
+		
+		overflow:hidden;
+
+		&:before{
+			content: ''; display: block;
+			position:absolute;
+			transition: $transitionBounce;
+
+			@include rect(120%, 120%);
+			top: 100%;
+			left: -110%;
+			transform:rotate(45deg);
+			background-color:#F26798;
+		}
+		&:after{
+			display: block;
+			z-index:1;
+			transition: $transitionBounce;
+		}
+
+		&.demo{
+			border-color: $demo;
+			color: $demo;
+
+			&:before{
+				background-color: $demo;
+			}
+			&:after{
+				content:'DEMO';
+			}
+		}
+		&.code{
+			border-color: $github;
+			color:$github;
+
+			&:before{
+				background-color: $github;
+			}
+			&:after{
+				content:'CODE';
+			}
+		}
+		&:hover{
+			color:#fff;
+			
+			&:before{
+				top: -10%;
+				left: -10%;
+			}
+			&:after{
+				transform:scale(1.2);
+			}
+		}
+	}
+}

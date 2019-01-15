@@ -1,0 +1,78 @@
+#bgVid{
+	position:fixed;
+	top:0;
+	z-index: -9999;
+	opacity:0.3;
+
+	min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+#hero {
+	position:relative;
+	overflow:hidden;
+	height:100vh;	
+	
+	.box {
+		@include rect(20em, 20em);
+		border-radius:0.2em;
+		background-color:$baseBgColor;
+		box-shadow: 0.1em 0.1em 0.3em 0.1em $boxShadow;
+		text-align: center;
+		
+		.title{
+			font-size:4em;
+		}
+			
+	}
+	.title{
+		font-size:1.6em;
+		padding: 0.5em 0;
+		// border:solid 0.1em #000;
+	}
+}
+
+
+/*
+
+
+
+http://chdmlr.com/index.html
+http://anaiszamboni.com/#work
+http://www.smashurbanmedia.com/
+http://aaronxmarquez.com/
+
+type
+http://alessandroscarpellini.it/logos/
+
+projects
+http://www.riangle.com/
+http://stuartregan.com/
+https://madeby.google.com/
+
+mobile
+http://www.eisenberger.co.at/
+
+textshadow
+http://annakokhan.com/
+
+color
+https://senator-tour.travel/#tourism
+http://www.eleganza.ca/?lang=en
+
+
+
+hero
+http://visitmy.country/
+
+section divide
+https://highness.co/
+
+contact
+https://www.siteinspire.com/websites/2609-helloauan
+
+
+*/
